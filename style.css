@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada:wdth,wght@75,300;100,300;100,400;100,500&display=swap');
+html{
+    box-sizing:border-box;
+    font-family: 'Radio Canada', sans-serif;
+}
+* , ::before , ::after{
+    box-sizing:inherit;
+    margin:0;
+    padding:0;
+}
+.background-img{
+    width:100%;
+    height:50vh;
+    background-image:url("./bg.jpg");
+    background-size:cover;
+    background-position:center center;
+
+}
+.search-b{
+    display:flex;
+    width:100%;
+    height:100%;
+    justify-content:center;
+    flex-wrap:nowrap;
+    align-items:center;
+    white-space:0;
+    
+}
+.search-b .search{
+     min-height:52px; 
+     background-color:#6ebe3b;
+     padding:4px 20px;
+     margin:4px;
+     font-size:16px;
+     border-width:1px;
+     border-color:transparent;
+     border-radius:8px;
+}
+.search-b .input{
+     min-width:700px;
+     outline:none;
+     
+     }
+.search-b .input:focus{
+    box-shadow: 0 0 0 1.5px hsla(210, 52%, 42%, 1.00), 0 0 0 .5rem hsla(200, 72%, 83%, 0.75);
+}
+.search-b .submit{
+    min-width:25px;
+    vertical-align:bottom;
+}
+.search-b .submit svg{ 
+    width: 32px;
+    height:32px;
+    vertical-align:middle;
+}
+@media screen and (min-width:768px) and (max-width:800px){
+    .search-b .input{
+         min-width:500px;
+    }
+}
+@media screen and (min-width:568px) and (max-width:767px){
+    .search-b .input{
+        min-width:450px;
+    }
+
+}
+@media screen and (max-width:567px){
+    .search-b .input{
+        min-width:300px;
+    }
+    .search-b .submit{
+        min-width:20px;
+    }
+}
+@media screen and (max-width:400px){
+    .search-b .input{
+        min-width:260px;
+    }
+}
+.cards{
+    display:flex;
+    width:100%;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    margin-top:-50px;
+    gap:20px;
+}
+
+.cards .box{
+    background: linear-gradient(to bottom, #5eaa2e 66px, #6ebe3b 50%);
+    flex-basis:100px;
+    height:100px; 
+    fill: #4a8623;
+}
+.cards .box a{
+    position:relative;
+    z-index: 99999;
+    display:block;
+    width:100%;
+    height:100%;
+    text-decoration:none;
+}
+.cards .box a svg{
+    display:flex;
+    height:65%;
+    width:100%;
+    justify-content:center;
+    align-items:center;
+}
+.cards .box a span{
+    display:flex;
+    width:100%;
+    height:35%;
+    justify-content:center;
+    align-items:center;
+}
+.cards .box a:hover svg{
+    fill:#fff;
+}
+.wrapper{
+   margin:10px 20px;
+}
+.wrapper > nav{
+    line-height:60px;
+    margin:10px 0px;
+}
+nav ul{
+    display:flex;
+    flex-flow:row wrap;
+    width:100%;
+}
+nav ul li{
+    list-style:none;
+}
+nav ul li a{
+    text-decoration:none;
+    color:#000;
+    font-weight:600;
+}
+nav ul li svg{
+    vertical-align:middle;
+}
+
+.wrapper > ul{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:space-around;
+    gap:20px;
+}
+.wrapper > ul > .meal-item{
+    width:270px;
+    height:390px;
+    display:flex;
+    flex-direction:column;
+}
+.wrapper > ul > .meal-item > .meal-img{
+    width:270px;
+    min-height:290px;
+}
+img{
+    max-width:100%;
+    height:100%;
+}
+.wrapper > ul > .meal-item > .meal-info{
+    height:100%;
+    background-color:#6ebe3b;
+    text-align:center;
+}
+.meal-info > p{
+    padding:5px 10px;
+    min-height:60px;
+    font-weight: 600;
+}
+.meal-info > button{
+    padding: 5px 30px;
+    border:2px solid transparent;
+    border-radius:20px;
+    color:#317408;
+}
+footer{
+   margin:40px 0px 0px;
+ 
+}
+.container{
+    display:flex;
+    width:100%;
+    flex-wrap:wrap;
+    background-color:#6ebe3b;
+    padding:20px 20px;
+}
+
+.container > .box{
+    flex-basis:100px;
+    flex-grow:1;
+    flex-shrink:1;
+    font-size:20px;
+    font-weight:600;
+    
+}
+.container > .box.info{
+    white-space: nowrap;
+    line-height:30px;
+}
+.container > .box.sponsership{
+   text-align:center;
+   min-width:200px;
+   font-size:0;
+   flex-grow:2;
+}
+.container > .box > img{
+    width:200px;
+    height:100px;
+}
+.container > .box.contact{
+    line-height:30px;
+    letter-spacing:4px;
+}
+
+@media screen and (max-width:968px){
+    .container > .box.sponsership{
+        flex-grow:4;
+     }
+}
+@media screen and (max-width:568px){
+    .container > .box{
+        flex-basis:100%;
+    }
+}
+
+
+
+
